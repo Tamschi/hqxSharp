@@ -1,5 +1,5 @@
 ﻿/*
- * Copyright © 2011 Tamme Schichler (tamme.schichler@googlemail.com)
+ * Copyright © 2011, 2012 Tamme Schichler (tamme.schichler@googlemail.com)
  * 
  * This file is part of hqxSharp.
  *
@@ -39,7 +39,7 @@ namespace hqx
 #if EASYTHREADING
         private static volatile int[] lookupTable;
 #else
-        private static volatile int[] lookupTable;
+        private static int[] lookupTable;
 #endif
 
         private static int[] LookupTable
