@@ -3,7 +3,7 @@
  * 
  * Copyright © 2010 Cameron Zemek (grom@zeminvaders.net)
  * 
- * Copyright © 2011 Tamme Schichler (tamme.schichler@googlemail.com)
+ * Copyright © 2011, 2012 Tamme Schichler (tamme.schichler@googlemail.com)
  * 
  * This file is part of hqxSharp.
  *
@@ -540,7 +540,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[1], w[3]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[1], w[3]);
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[7], w[3]);
@@ -559,7 +559,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[7]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[7], w[3]);
                                 break;
@@ -575,7 +575,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[1]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[1]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[6], w[3]);
@@ -593,7 +593,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[7], w[3]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[7], w[3]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 break;
@@ -611,7 +611,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[7], w[5]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[7], w[5]);
                                 }
                                 break;
                             }
@@ -625,7 +625,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[3], w[1]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[3], w[1]);
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
                                 }
                                 *(dp + 1) = Interpolation.Mix2To1To1(w[4], w[1], w[5]);
@@ -643,7 +643,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[3], w[7]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[3], w[7]);
                                 }
                                 *(dp + 1) = Interpolation.Mix2To1To1(w[4], w[2], w[5]);
                                 *(dp + dpL + 1) = Interpolation.Mix2To1To1(w[4], w[5], w[7]);
@@ -660,7 +660,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[1], w[5]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[6], w[7]);
                                 *(dp + dpL + 1) = Interpolation.Mix2To1To1(w[4], w[5], w[7]);
@@ -1260,7 +1260,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[1], w[3]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[1], w[3]);
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[7], w[3]);
@@ -1279,7 +1279,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[7]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[7], w[3]);
                                 break;
@@ -1295,7 +1295,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[1]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[1]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[6], w[3]);
@@ -1313,7 +1313,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[7], w[3]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[7], w[3]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 break;
@@ -1331,7 +1331,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[7], w[5]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[7], w[5]);
                                 }
                                 break;
                             }
@@ -1345,7 +1345,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[3], w[1]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[3], w[1]);
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
                                 }
                                 *(dp + 1) = Interpolation.Mix2To1To1(w[4], w[1], w[5]);
@@ -1363,7 +1363,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[3], w[7]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[3], w[7]);
                                 }
                                 *(dp + 1) = Interpolation.Mix2To1To1(w[4], w[2], w[5]);
                                 *(dp + dpL + 1) = Interpolation.Mix2To1To1(w[4], w[5], w[7]);
@@ -1380,7 +1380,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[1], w[5]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix2To1To1(w[4], w[6], w[7]);
                                 *(dp + dpL + 1) = Interpolation.Mix2To1To1(w[4], w[5], w[7]);
@@ -2143,7 +2143,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[3], w[1]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[3], w[1]);
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
                                 }
                                 *(dp + 1) = Interpolation.Mix3To1(w[4], w[1]);
@@ -2160,7 +2160,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[1]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[1]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix3To1(w[4], w[6]);
@@ -2176,7 +2176,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + 1) = Interpolation.Mix4To2To1(w[4], w[1], w[5]);
+                                    *(dp + 1) = Interpolation.Mix5To2To1(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix3To1(w[4], w[6]);
                                 *(dp + dpL + 1) = Interpolation.Mix3To1(w[4], w[5]);
@@ -2194,7 +2194,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + dpL) = Interpolation.Mix2To3To3(w[4], w[7], w[3]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[7], w[5]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[7], w[5]);
                                 }
                                 break;
                             }
@@ -2209,7 +2209,7 @@ namespace hqx
                                 else
                                 {
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
-                                    *(dp + dpL + 1) = Interpolation.Mix4To2To1(w[4], w[5], w[7]);
+                                    *(dp + dpL + 1) = Interpolation.Mix5To2To1(w[4], w[5], w[7]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix3To1(w[4], w[7]);
                                 break;
@@ -2224,7 +2224,7 @@ namespace hqx
                                 else
                                 {
                                     *dp = Interpolation.Mix2To3To3(w[4], w[3], w[1]);
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[3], w[7]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[3], w[7]);
                                 }
                                 *(dp + 1) = Interpolation.Mix3To1(w[4], w[2]);
                                 *(dp + dpL + 1) = Interpolation.Mix3To1(w[4], w[7]);
@@ -2241,7 +2241,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *(dp + dpL) = Interpolation.Mix4To2To1(w[4], w[7], w[3]);
+                                    *(dp + dpL) = Interpolation.Mix5To2To1(w[4], w[7], w[3]);
                                     *(dp + dpL + 1) = Interpolation.Mix2To3To3(w[4], w[5], w[7]);
                                 }
                                 break;
@@ -2255,7 +2255,7 @@ namespace hqx
                                 }
                                 else
                                 {
-                                    *dp = Interpolation.Mix4To2To1(w[4], w[1], w[3]);
+                                    *dp = Interpolation.Mix5To2To1(w[4], w[1], w[3]);
                                     *(dp + 1) = Interpolation.Mix2To3To3(w[4], w[1], w[5]);
                                 }
                                 *(dp + dpL) = Interpolation.Mix3To1(w[4], w[3]);
